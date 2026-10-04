@@ -83,6 +83,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
   font-size: 13px;
 }
 .cap span + span { color: var(--muted); }
+.cap em { font-size: 1.2em; line-height: 1; }
 
 /* --------------------------------------------------------------------------
    Header — four-column index bar

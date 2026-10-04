@@ -55,7 +55,7 @@ assets/img/           сюди кладуться фото Марії
 4. Щоб побачити, яке фото куди йде, відкрийте сайт з `?map` у кінці адреси (наприклад `index.html?map`): на кожному фото з'явиться назва його файлу.
 
 **Підписи і категорії** в Work (назва роботи, Sport/Events) змінюються в `index.html`, у блоці потрібної `<figure class="tile">`:
-- `<figcaption class="cap"><span>Назва</span><span>Категорія</span></figcaption>`: підпис;
+- `<figcaption class="cap"><span>Назва <em>/ Movement</em></span><span>Категорія</span></figcaption>`: підпис; настрій кадру в `<em>` — `Movement`, `Energy` або `Emotion`;
 - `data-cat`: `sport` або `events` (по ньому працює фільтр);
 - кількість робіт у фільтрі (`Sport (6)`) оновіть, якщо змінюєте категорії.
 
