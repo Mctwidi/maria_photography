@@ -247,13 +247,13 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
    3. About
    -------------------------------------------------------------------------- */
 .about {
+  min-height: 80vh;
   padding: 16vh var(--gutter);
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: var(--gap);
   align-items: start;
 }
-.about__photo { grid-column: 1 / span 5; }
 .about__text {
   grid-column: 7 / -1;
   position: sticky;
@@ -536,9 +536,8 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
   .grid.is-filtered .tile { grid-column: span 3; margin-top: 0; }
   .cap { font-size: 11px; padding-top: 8px; }
 
-  .about { padding: 12vh var(--gutter); }
-  .about__photo { grid-column: 1 / span 10; }
-  .about__text { grid-column: 1 / -1; position: static; margin-top: 4vh; font-size: 18px; }
+  .about { min-height: 0; padding: 12vh var(--gutter); }
+  .about__text { grid-column: 1 / -1; position: static; font-size: 18px; }
 
   .approach__intro { grid-template-columns: 1fr; gap: 10px; }
   .approach__sub { text-align: left; }
