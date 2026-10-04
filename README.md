@@ -1,6 +1,6 @@
 # Maria Mospanova — Photography
 
-Сайт-портфоліо фотографа: Sport / Events / Fashion.
+Сайт-портфоліо фотографа: Sport / Events.
 Статичний сайт (HTML + CSS + vanilla JS), без фреймворків і без збірки, тож його можна просто завантажити на [tiiny.host](https://tiiny.host).
 
 ```
@@ -27,7 +27,7 @@ assets/img/           сюди кладуться фото Марії
 **Свої деталі, щоб сайти не були схожі:**
 
 1. **Теплий off-white** `#F1EEE8` замість чистого білого.
-2. **Serif-курсив** (Instrument Serif) для акцентних слів: *together*, *sports, events and fashion*.
+2. **Serif-курсив** (Instrument Serif) для акцентних слів: *together*, *sports and events*.
 3. **Один акцентний колір**: глиняно-червоний `#C8432B`, лише на дужках активного пункту меню.
 4. **Перший екран — колаж** із 7 фото, які з'являються по черзі (stagger + clip-reveal), а не одне фото.
 5. **Живий хедер**: при скролі або наведенні на фото показує назву роботи, категорію і номер.
@@ -54,39 +54,39 @@ assets/img/           сюди кладуться фото Марії
 3. Покладіть у `assets/img/`.
 4. Щоб побачити, яке фото куди йде, відкрийте сайт з `?map` у кінці адреси (наприклад `index.html?map`): на кожному фото з'явиться назва його файлу.
 
-**Підписи і категорії** в Work (назва роботи, Sport/Events/Fashion) змінюються в `index.html`, у блоці потрібної `<figure class="tile">`:
+**Підписи і категорії** в Work (назва роботи, Sport/Events) змінюються в `index.html`, у блоці потрібної `<figure class="tile">`:
 - `<figcaption class="cap"><span>Назва</span><span>Категорія</span></figcaption>`: підпис;
-- `data-cat`: `sport`, `events` або `fashion` (по ньому працює фільтр);
+- `data-cat`: `sport` або `events` (по ньому працює фільтр);
 - кількість робіт у фільтрі (`Sport (6)`) оновіть, якщо змінюєте категорії.
 
 Формат у таблиці — це пропорція рамки. Фото іншої пропорції теж підійде, просто воно буде обрізане по центру.
 
 | Файл | Де на сайті | Формат |
 |---|---|---|
-| `hero-01.jpg` | Перший екран, колаж: великий вертикальний кадр зліва (sport) | вертикальне |
-| `hero-02.jpg` | Перший екран, колаж: горизонтальний угорі (events) | горизонтальне |
-| `hero-03.jpg` | Перший екран, колаж: вертикальний (fashion) | вертикальне |
-| `hero-04.jpg` | Перший екран, колаж: горизонтальний справа вгорі (sport, крупний план) | горизонтальне |
-| `hero-05.jpg` | Перший екран, колаж: вертикальний вузький (fashion) | вертикальне |
-| `hero-06.jpg` | Перший екран, колаж: горизонтальний унизу (sport, рух) | горизонтальне |
-| `hero-07.jpg` | Перший екран, колаж: вертикальний справа (events) | вертикальне |
-| `work-01.jpg` | Work → Sport: «Road Race» | горизонтальне (3:2) |
-| `work-02.jpg` | Work → Fashion: «Studio Editorial» | вертикальне (4:5) |
-| `work-03.jpg` | Work → Events: «Live Concert» | вертикальне (3:4) |
-| `work-04.jpg` | Work → Sport: «Marathon» | вертикальне (4:5) |
-| `work-05.jpg` | Work → Fashion: «Lookbook» | вертикальне (2:3) |
-| `work-06.jpg` | Work → Events: «Open Air Festival» | горизонтальне (21:9) |
-| `work-07.jpg` | Work → Fashion: «Campaign» | вертикальне (3:4) |
-| `work-08.jpg` | Work → Sport: «Court» | горизонтальне (4:3) |
-| `work-09.jpg` | Work → Events: «Tech Summit» | горизонтальне (3:2) |
-| `work-10.jpg` | Work → Fashion: «Red Dress» | вертикальне (3:4) |
-| `work-11.jpg` | Work → Sport: «Pool» | квадратне (1:1) |
-| `work-12.jpg` | Work → Sport: «Surf Session» | вертикальне (4:5) |
-| `work-13.jpg` | Work → Events: «Private Party» | квадратне (1:1) |
-| `work-14.jpg` | Work → Fashion: «Winter Coat» | вертикальне (4:5) |
-| `work-15.jpg` | Work → Sport: «Matchday» | горизонтальне (3:2) |
-| `work-16.jpg` | Work → Events: «Gala Night» | вертикальне (4:5) |
-| `work-17.jpg` | Work → Fashion: «Street Style» | горизонтальне (3:2) |
+| `hero-01.jpg` | Перший екран, колаж: великий вертикальний зліва (sport) | вертикальне |
+| `hero-02.jpg` | Перший екран, колаж: угорі (events) | горизонтальне |
+| `hero-03.jpg` | Перший екран, колаж: вертикальний (events) | вертикальне |
+| `hero-04.jpg` | Перший екран, колаж: справа вгорі (events) | горизонтальне |
+| `hero-05.jpg` | Перший екран, колаж: вертикальний вузький (events) | вертикальне |
+| `hero-06.jpg` | Перший екран, колаж: горизонтальний унизу (events) | горизонтальне |
+| `hero-07.jpg` | Перший екран, колаж: вертикальний справа (sport) | вертикальне |
+| `work-01.jpg` | Work → Events: «Stage Show» | горизонтальне (3:2) |
+| `work-02.jpg` | Work → Events: «Red Sequins» | вертикальне (4:5) |
+| `work-03.jpg` | Work → Sport: «Kick-off» | вертикальне (3:4) |
+| `work-04.jpg` | Work → Sport: «Matchday» | вертикальне (4:5) |
+| `work-05.jpg` | Work → Events: «In Black» | вертикальне (2:3) |
+| `work-06.jpg` | Work → Events: «Finale» | горизонтальне (21:9) |
+| `work-07.jpg` | Work → Sport: «Academy Day» | вертикальне (3:4) |
+| `work-08.jpg` | Work → Events: «Showcase» | горизонтальне (4:3) |
+| `work-09.jpg` | Work → Events: «Formation» | горизонтальне (3:2) |
+| `work-10.jpg` | Work → Events: «Feathers» | вертикальне (3:4) |
+| `work-11.jpg` | Work → Sport: «Goalkeeper» | вертикальне (4:5) |
+| `work-12.jpg` | Work → Sport: «Warm-up» | вертикальне (4:5) |
+| `work-13.jpg` | Work → Events: «Encore» | вертикальне (4:5) |
+| `work-14.jpg` | Work → Events: «Freeze» | вертикальне (4:5) |
+| `work-15.jpg` | Work → Sport: «Coach» | вертикальне (4:5) |
+| `work-16.jpg` | Work → Events: «Black Wings» | вертикальне (4:5) |
+| `work-17.jpg` | Work → Events: «Silver Fans» | вертикальне (4:5) |
 | `approach-01.jpg` | Approach: фото, що спливає при наведенні на слово MOVEMENT (тільки комп'ютер) | вертикальне (3:4) |
 | `approach-02.jpg` | Approach: фото, що спливає при наведенні на слово ENERGY (тільки комп'ютер) | вертикальне (3:4) |
 | `approach-03.jpg` | Approach: фото, що спливає при наведенні на слово PEOPLE (тільки комп'ютер) | вертикальне (3:4) |
