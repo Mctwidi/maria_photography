@@ -105,9 +105,9 @@ assets/img/           сюди кладуться фото Марії
 
 ## 5. Що треба підставити перед запуском
 
-- [ ] email: `email@email.com` (зустрічається у 2 посиланнях `mailto:` + текст)
-- [ ] посилання на Instagram: `https://instagram.com/` → `https://instagram.com/нікнейм`
-- [ ] WhatsApp: `https://wa.me/` → `https://wa.me/49XXXXXXXXXX` (номер без `+` і пробілів; сам номер на сайті не показується)
+- [x] email: `mari.photography.online@gmail.com`
+- [x] Instagram: [@mari_mospanova](https://www.instagram.com/mari_mospanova/)
+- [x] WhatsApp: `https://wa.me/message/CJIZENQOKGA7D1` (номер на сайті не показується)
 - [ ] назви робіт у підписах
 
 ## 6. Публікація на tiiny.host

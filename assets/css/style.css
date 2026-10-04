@@ -555,6 +555,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 
   .contact { padding: 12vh var(--gutter) 10vh; }
   .contact__main { grid-column: 1 / -1; }
+  .contact__email { font-size: clamp(16px, 5.4vw, 24px); overflow-wrap: anywhere; }
   .contact__side { grid-column: 4 / -1; margin-top: 6vh; }
 
   .footer { grid-template-columns: 1fr; gap: 14px; }
