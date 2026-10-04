@@ -175,9 +175,14 @@
 
   if (finePointer && peek) {
     // preload peek images
-    words.forEach(function (w) { var i = new Image(); i.src = w.dataset.img; });
     words.forEach(function (w) {
-      w.addEventListener('mouseenter', function () { peekImg.src = w.dataset.img; peek.classList.add('is-on'); });
+      w.addEventListener('mouseenter', function () {
+        delete peekImg.dataset.phUsed;
+        delete peekImg.dataset.fallback;
+        peekImg.dataset.ph = w.dataset.ph || '';
+        peekImg.src = w.dataset.img;
+        peek.classList.add('is-on');
+      });
       w.addEventListener('mouseleave', function () { peek.classList.remove('is-on'); });
     });
     approach.addEventListener('mousemove', function (e) {
@@ -335,7 +340,24 @@
     window.addEventListener('scroll', function () { cursor.classList.remove('is-on'); }, { passive: true });
   }
 
-  /* ---------- 11. Berlin local time ---------- */
+  /* ---------- 11. Photo map: open index.html?map to see each photo's file name ---------- */
+  if (/[?&]map\b/.test(location.search)) {
+    document.body.classList.add('show-map');
+    $$('img[data-ph]').forEach(function (img) {
+      var tag = document.createElement('span');
+      tag.className = 'map-tag';
+      tag.textContent = img.getAttribute('src').split('/').pop();
+      (img.closest('.ph, .hc') || img.parentNode).appendChild(tag);
+    });
+    $$('.word[data-img]').forEach(function (w) {
+      var tag = document.createElement('span');
+      tag.className = 'map-tag map-tag--word';
+      tag.textContent = w.dataset.img.split('/').pop();
+      w.appendChild(tag);
+    });
+  }
+
+  /* ---------- 12. Berlin local time ---------- */
   var clock = $('[data-clock]');
   if (clock && window.Intl) {
     var fmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' });

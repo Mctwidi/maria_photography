@@ -468,6 +468,22 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 }
 .js [data-reveal].is-in { opacity: 1; translate: 0 0; }
 
+/* Photo map (index.html?map) — shows which file goes where */
+.map-tag {
+  position: absolute;
+  left: 8px; top: 8px;
+  z-index: 3;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  text-transform: none;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+.map-tag--word { position: static; display: inline-block; vertical-align: top; margin-left: 12px; font-family: var(--sans); }
+.show-map .word { position: relative; }
+
 /* ==========================================================================
    Tablet
    ========================================================================== */
