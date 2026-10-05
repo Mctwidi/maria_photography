@@ -343,7 +343,7 @@
   /* ---------- 11. Photo map: open index.html?map to see each photo's file name ---------- */
   if (/[?&]map\b/.test(location.search)) {
     document.body.classList.add('show-map');
-    $$('img[data-ph]').forEach(function (img) {
+    $$('img[src^="assets/img/"]').forEach(function (img) {
       var tag = document.createElement('span');
       tag.className = 'map-tag';
       tag.textContent = img.getAttribute('src').split('/').pop();

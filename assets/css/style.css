@@ -180,13 +180,14 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .is-loaded .hc img { transform: scale(1); }
 
 /* desktop composition (percentages of the collage box) */
-.hc--a { left: 0;     top: 8%;  width: 24%; height: 78%; }
+.hc--a { left: 0;     top: 8%;  width: 24%; height: 54%; }
 .hc--b { left: 27%;   top: 0;   width: 30%; height: 46%; }
 .hc--c { left: 60%;   top: 14%; width: 14%; height: 44%; }
 .hc--d { left: 78%;   top: 0;   width: 22%; height: 34%; }
 .hc--e { left: 27%;   top: 52%; width: 13%; height: 48%; }
 .hc--f { left: 43%;   top: 64%; width: 31%; height: 36%; }
 .hc--g { left: 78%;   top: 41%; width: 15%; height: 59%; }
+.hc--h { left: 8%;    top: 68%; width: 16%; height: 32%; }
 
 .hero__meta {
   position: absolute;
@@ -520,7 +521,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
   .hc--f { left: 0;   top: 55%; width: 58%; height: 22%; }
   .hc--g { left: 22%; top: 81%; width: 36%; height: 19%; }
   .hc--e { left: 62%; top: 71%; width: 38%; height: 29%; }
-  .hc--d { display: none; }
+  .hc--d, .hc--h { display: none; }
   .hero__disciplines { gap: 6px; }
 
   .work { padding-top: 12vh; }
