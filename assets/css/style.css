@@ -267,6 +267,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
   line-height: 1.28;
   letter-spacing: -.005em;
 }
+.about__photo { grid-column: 1 / span 5; }
 .about__text .label { font-size: 12px; letter-spacing: .04em; }
 .about__lead em { font-size: 1.12em; }
 
@@ -539,7 +540,8 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
   .cap { font-size: 11px; padding-top: 8px; }
 
   .about { min-height: 0; padding: 12vh var(--gutter); }
-  .about__text { grid-column: 1 / -1; position: static; font-size: 18px; }
+  .about__photo { grid-column: 1 / span 10; }
+  .about__text { grid-column: 1 / -1; position: static; margin-top: 4vh; font-size: 18px; }
 
   .approach__intro { grid-template-columns: 1fr; gap: 10px; }
   .approach__sub { text-align: left; }
