@@ -123,4 +123,10 @@ assets/img/           сюди кладуться фото Марії
 
 ## 7. Google Search Console
 
-У корені сайту лежить `google84bf7ad570b67ff8.html` — файл підтвердження права власності для Google Search Console (спосіб «HTML-файл»). Його не можна перейменовувати, змінювати чи видаляти, інакше підтвердження злетить.
+Підтвердження права власності — тег у `<head>` файлу `index.html`:
+
+```html
+<meta name="google-site-verification" content="XqzXgCKZwIQLnxauvd_oPKRa2JU0GCqbyXRKcChJCmk" />
+```
+
+Не видаляйте його, навіть після успішного підтвердження. Файл `google84bf7ad570b67ff8.html` у корені — запасний спосіб «HTML-файл» (на tiiny.host він не спрацював).
